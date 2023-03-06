@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Circe';
+  src: url(/custom/NewDesign/fonts/circe-extralight.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url(/custom/NewDesign/fonts/circe-light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url(/custom/NewDesign/fonts/circe.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url(/custom/NewDesign/fonts/circe-bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url(/custom/NewDesign/fonts/circe-extrabold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url(/custom/NewDesign/fonts/Caveat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
