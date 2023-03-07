@@ -5671,34 +5671,7 @@ main {
 }
 
 .doctor-rewiev .slides-extended.video-carousel .doctor-rewiev-pagination {
-  position: absolute;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: 100% !important;
-  gap: 5px;
-  max-width: 330px !important;
-  left: 50% !important;
   bottom: -40px !important;
-  transform: translateX(-50%) !important;
-  height: 3px;
-}
-
-.doctor-rewiev .swiper-pagination-bullet {
-  height: 2px !important;
-  background: #000000 !important;
-  opacity: 0.1 !important;
-  cursor: pointer !important;
-  width: 100% !important;
-  border-radius: 0px !important;
-}
-
-.doctor-rewiev .swiper-pagination-bullet-active {
-  height: 2px !important;
-  background: #FB7E01 !important;
-  opacity: 1 !important;
-  width: 100% !important;
-  cursor: pointer !important;
 }
 
 .doctor-rewiev .video-player-title::before {
@@ -6603,33 +6576,7 @@ main {
 }
 
 .doctor-works .doctor-works-pagination {
-  position: absolute;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  max-width: 330px !important;
-  width: 100% !important;
-  gap: 5px !important;
-  left: 50% !important;
   bottom: 80px;
-  transform: translateX(-50%) !important;
-}
-
-.doctor-works .swiper-pagination-bullet {
-  height: 2px !important;
-  background: #000000 !important;
-  opacity: 0.1 !important;
-  cursor: pointer !important;
-  width: 100% !important;
-  border-radius: 0px !important;
-}
-
-.doctor-works .swiper-pagination-bullet-active {
-  height: 2px !important;
-  background: #FB7E01 !important;
-  opacity: 1 !important;
-  width: 100% !important;
-  cursor: pointer !important;
 }
 
 @media screen and (max-width: 1550px) {
@@ -7040,33 +6987,7 @@ main {
 }
 
 .doctor-certificates-pagination {
-  position: absolute;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  max-width: 330px !important;
-  width: 100% !important;
-  gap: 5px !important;
-  left: 50% !important;
   bottom: 80px !important;
-  transform: translateX(-50%) !important;
-}
-
-.doctor-certificates-pagination .swiper-pagination-bullet {
-  height: 2px !important;
-  background: #000000 !important;
-  opacity: 0.1 !important;
-  cursor: pointer !important;
-  width: 100% !important;
-  border-radius: 0px !important;
-}
-
-.doctor-certificates-pagination .swiper-pagination-bullet-active {
-  height: 2px !important;
-  background: #FB7E01 !important;
-  opacity: 1 !important;
-  width: 100% !important;
-  cursor: pointer !important;
 }
 
 @media screen and (max-width: 1550px) {
@@ -7907,6 +7828,7 @@ main {
   text-decoration-style: dotted;
   text-decoration-color: rgba(0, 0, 0, .4);
   transition: all 0.4s ease-in-out;
+  text-underline-offset: 4px;
 }
 
 .other-specialists__clinics:hover .price-table-accordion__img-tooltip {
@@ -10003,4 +9925,36 @@ main {
   .review-youtube .title-new__container::after {
     bottom: -15px;
   }
+}
+
+/* bullets */
+
+.slider-doctor-pagination {
+  position: absolute;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  max-width: 330px !important;
+  width: 100% !important;
+  gap: 5px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.slider-doctor-pagination .swiper-pagination-bullet {
+  height: 2px !important;
+  background: #000000 !important;
+  opacity: 0.1 !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  border-radius: 0px !important;
+  cursor: pointer !important;
+}
+
+.slider-doctor-pagination .swiper-pagination-bullet-active {
+  height: 2px !important;
+  background: #FB7E01 !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  cursor: pointer !important;
 }

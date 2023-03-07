@@ -9,6 +9,11 @@ define(['swiper'], Swiper => {
         slidesPerView: "auto",
         spaceBetween: 0,
         centeredSlides: true,
+        pagination: {
+          el: '.slider-doctor-pagination',
+          clickable: true,
+          loop: true,
+        },
         breakpoints: {
           600: {
             centeredSlides: true,
