@@ -7844,6 +7844,14 @@ main {
 
 .swiper-slide-active .other-specialists__name {
   text-decoration: underline solid rgba(251, 126, 1, 1);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
+.other-specialists__slider-item:hover .other-specialists__name {
+  text-decoration: underline solid rgba(251, 126, 1, 1);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
 }
 
 .other-specialists__position {
@@ -9112,17 +9120,6 @@ main {
   left: inherit !important;
   right: inherit !important;
   top: inherit !important;
-}
-
-/*
-.doctors-list__container .other-specialists__slider-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-*/
-
-.doctors-list .other-specialists__slider-item:hover {
-  transform: none;
 }
 
 .doctors-list .other-specialists__image-bg::after {
