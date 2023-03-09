@@ -37,7 +37,7 @@ define(() => {
             cross.style.display = "block";
             searchTitle.forEach((title) => {
               const accordionActiveItem = title.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
-              const accordionSubcategorycaActiveItem = title.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+              const accordionSubcategoryActiveItem = title.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
               const accordionInAccordionActiveItem = title.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
 
               if (title.innerText.toLowerCase().search(value.toLowerCase()) == -1) {
@@ -46,8 +46,13 @@ define(() => {
 
                 accordionList.forEach((accordionListItem) => {
                   if (
-                    accordionListItem.querySelectorAll(".price-table-accordion__list-item").length ==
-                    accordionListItem.querySelectorAll(".hide").length
+                    accordionListItem.querySelectorAll(".price-table-accordion__list-item").length ===
+                    (accordionListItem.querySelectorAll("price-table-accordion__list-item.hide").length)
+                  ) {
+                    accordionListItem.parentNode.classList.add("hide");
+                  } else if (
+                    accordionListItem.querySelectorAll(".serves-accordion-list__subitem").length ===
+                    (accordionListItem.querySelectorAll(".serves-accordion-list__subitem.hide").length)
                   ) {
                     accordionListItem.parentNode.classList.add("hide");
                   } else {
@@ -58,17 +63,6 @@ define(() => {
                 accordionSubitemList.forEach((accordionListItem) => {
                   if (
                     accordionListItem.querySelectorAll(".price-table-accordion__list-item").length ==
-                    accordionListItem.querySelectorAll(".hide").length
-                  ) {
-                    accordionListItem.parentNode.classList.add("hide");
-                  } else {
-                    accordionListItem.parentNode.classList.remove("hide");
-                  }
-                });
-
-                accordionSubitemList.forEach((accordionListItem) => {
-                  if (
-                    accordionListItem.querySelectorAll(".serves-accordion-list__subitem").length ==
                     accordionListItem.querySelectorAll(".hide").length
                   ) {
                     accordionListItem.parentNode.classList.add("hide");
@@ -114,15 +108,15 @@ define(() => {
                   accordionInAccordionActiveItem.querySelector(".serve-accordion__title").classList.remove("serve-accordion__title-disable");
                   accordionInAccordionActiveItem.style.overflow = "visible";
 
-                  accordionSubcategorycaActiveItem.querySelector(".serves-accordion__list").classList.remove("accordion-disable");
-                  accordionSubcategorycaActiveItem.querySelector(".serve-accordion__title").classList.remove("serve-accordion__title-disable");
-                  accordionSubcategorycaActiveItem.style.overflow = "visible";
+                  accordionSubcategoryActiveItem.querySelector(".serves-accordion__list").classList.remove("accordion-disable");
+                  accordionSubcategoryActiveItem.querySelector(".serve-accordion__title").classList.remove("serve-accordion__title-disable");
+                  accordionSubcategoryActiveItem.style.overflow = "visible";
                 }
 
-                if (accordionSubcategorycaActiveItem.classList.contains("serves__accordion")) {
-                  accordionSubcategorycaActiveItem.querySelector(".serves-accordion__list").classList.remove("accordion-disable");
-                  accordionSubcategorycaActiveItem.querySelector(".serve-accordion__title").classList.remove("serve-accordion__title-disable");
-                  accordionSubcategorycaActiveItem.style.overflow = "visible";
+                if (accordionSubcategoryActiveItem.classList.contains("serves__accordion")) {
+                  accordionSubcategoryActiveItem.querySelector(".serves-accordion__list").classList.remove("accordion-disable");
+                  accordionSubcategoryActiveItem.querySelector(".serve-accordion__title").classList.remove("serve-accordion__title-disable");
+                  accordionSubcategoryActiveItem.style.overflow = "visible";
                 }
               }
             });
