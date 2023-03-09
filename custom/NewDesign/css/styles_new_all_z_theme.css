@@ -2563,6 +2563,14 @@
   margin-top: 3px;
 }
 
+.accordion__group-container .price-table-accordion__list-item:nth-child(2n+1) {
+  background: #fff;
+}
+
+.accordion__group-container .price-table-accordion__list-item:nth-child(2n) {
+  background: #FAF9F9;
+}
+
 .price-table-accordion__group {
   font-family: 'Circe';
   font-style: normal;
