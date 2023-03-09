@@ -2860,6 +2860,7 @@
     width: 100%;
     justify-content: flex-end;
     flex-direction: row-reverse;
+    margin-top: 10px;
   }
 
   .price-table-accordion__list-item:has(.serves-accordion-text__info) .price-table-accordion__item-price-container {
@@ -2887,6 +2888,7 @@
   .price-table-accordion__list-item-subtitle {
     font-size: 14px;
     line-height: 155%;
+    margin-bottom: 0;
   }
 
   .price-table-accordion__item-price-from {
