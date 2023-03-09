@@ -7841,20 +7841,56 @@ main {
   text-underline-offset: 4px;
 }
 
-.other-specialists__clinics:hover .price-table-accordion__img-tooltip {
+.img-tooltip {
+  flex-direction: column;
+  position: absolute;
+  font-family: "Circe";
+  font-size: 14px;
+  line-height: 21px;
+  display: none;
+  opacity: 0;
+  transition: 0.3s ease;
+  bottom: 130%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 12px;
+  color: #fff;
+  left: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  z-index: 9;
+}
+
+.img-tooltip::after {
+  content: "";
+  background-image: url(/custom/NewDesign/img/info-tooltip-price-accordion-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 7.5px;
+  height: 12px;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(135deg);
+}
+
+.other-specialists__clinics:hover .img-tooltip {
   left: 50%;
   display: flex;
   opacity: 1;
   visibility: visible;
 }
 
-.other-specialists__clinics:hover .price-table-accordion__img-tooltip {
+.other-specialists__clinics:hover .img-tooltip {
   background: #FFFFFF;
   box-shadow: 0px 4px 76px rgba(0, 0, 0, 0.2);
   padding: 10px 20px 8px;
 }
 
-.other-specialists__clinics:hover .price-table-accordion__img-tooltip::after {
+.other-specialists__clinics:hover .img-tooltip::after {
   background: #FFFFFF;
 }
 
@@ -7934,7 +7970,7 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  .other-specialists__clinics:hover .price-table-accordion__img-tooltip {
+  .other-specialists__clinics:hover .img-tooltip {
     align-items: center;
     transform: translateX(-50%);
     bottom: 130%;
