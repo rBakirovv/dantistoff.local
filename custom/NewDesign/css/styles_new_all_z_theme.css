@@ -2971,12 +2971,14 @@ main {
 }
 
 .main__content {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .main__container {
   display: flex;
+  justify-content: space-between;
 }
 
 .main__nav {
@@ -3371,6 +3373,14 @@ main {
   .banner-sale__btn {
     max-width: none;
   }
+}
+
+.serves {
+  width: 100%;
+}
+
+.serves__search-container {
+  width: 100%;
 }
 
 .serves__search {
