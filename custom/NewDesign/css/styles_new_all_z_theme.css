@@ -4219,6 +4219,10 @@ main {
     width: 100%;
   }
 
+  .pricing-banner__item:last-child {
+    margin-bottom: 20px;
+  }
+
   .banner-sale {
     background-image: url(/custom/NewDesign/img/banner-sale-bg-mobile.png);
     padding: 18px;
