@@ -4262,7 +4262,6 @@ main {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: 40px;
   }
 
   .price-table-accordion__list-item-container:not(:has(.serves-accordion-text__info)) .serves-accordion__price {
