@@ -2563,11 +2563,11 @@
   margin-top: 3px;
 }
 
-.accordion__group-container .price-table-accordion__list-item:nth-child(2n+1) {
+.accordion__group-container .price-table-accordion__list-item:nth-child(2n) {
   background: #fff;
 }
 
-.accordion__group-container .price-table-accordion__list-item:nth-child(2n) {
+.accordion__group-container .price-table-accordion__list-item:nth-child(2n+1) {
   background: #FAF9F9;
 }
 
