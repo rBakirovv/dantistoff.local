@@ -63,7 +63,7 @@ define(() => {
                 accordionSubitemList.forEach((accordionListItem) => {
                   if (
                     accordionListItem.querySelectorAll(".price-table-accordion__list-item").length ==
-                    accordionListItem.querySelectorAll(".hide").length
+                    accordionListItem.querySelectorAll(".price-table-accordion__list-item.hide").length
                   ) {
                     accordionListItem.parentNode.classList.add("hide");
                   } else {
