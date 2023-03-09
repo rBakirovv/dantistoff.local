@@ -2963,6 +2963,9 @@ main {
 
 .pricing-sidebar {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
   padding-left: 30px;
   position: sticky;
   top: 90px;
@@ -3170,6 +3173,10 @@ main {
 
 .pricing-banner__item:nth-child(2) {
   background-image: url(/custom/NewDesign/img/banner-bg2.png);
+}
+
+.pricing-banner__item:last-child {
+  margin-bottom: 0;
 }
 
 .pricing-banner__title {
