@@ -2486,6 +2486,13 @@
   line-height: 32px;
 }
 
+@media screen and (max-width: 500px) {
+  .price-table-accordion__item-price-from-span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .price-table-accordion__item-price-to {
   font-family: 'Circe';
   font-style: normal;
