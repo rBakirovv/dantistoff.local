@@ -44,19 +44,31 @@ define(() => {
                 title.parentNode.parentNode.parentNode.parentNode.classList.add("hide");
                 title.innerHTML = title.innerText;
 
-                accordionList.forEach((accordionListItem) => {
+                accordionList.forEach((accordionListItem, index) => {
+                  if (!accordionListItem.querySelector(".serves-accordion-list__subitem")) {
+                    if (
+                      accordionListItem.querySelectorAll(".price-table-accordion__list-item").length ===
+                      accordionListItem.querySelectorAll(".price-table-accordion__list-item.hide").length
+                    ) {
+                      accordionListItem.parentNode.classList.add("hide");
+                    } else {
+                      accordionListItem.parentNode.classList.remove("hide");
+                    }
+                  }
+                });
+
+                accordionList.forEach((accordionListItem, index) => {
                   if (
-                    accordionListItem.querySelectorAll(".price-table-accordion__list-item").length ===
-                    (accordionListItem.querySelectorAll("price-table-accordion__list-item.hide").length)
+                    accordionListItem.querySelector(".serves-accordion-list__subitem")
                   ) {
-                    accordionListItem.parentNode.classList.add("hide");
-                  } else if (
-                    accordionListItem.querySelectorAll(".serves-accordion-list__subitem").length ===
-                    (accordionListItem.querySelectorAll(".serves-accordion-list__subitem.hide").length)
-                  ) {
-                    accordionListItem.parentNode.classList.add("hide");
-                  } else {
-                    accordionListItem.parentNode.classList.remove("hide");
+                    if (
+                      accordionListItem.querySelectorAll(".serves-accordion-list__subitem").length ===
+                      accordionListItem.querySelectorAll(".serves-accordion-list__subitem.hide").length
+                    ) {
+                      accordionListItem.parentNode.classList.add("hide");
+                    } else {
+                      accordionListItem.parentNode.classList.remove("hide");
+                    }
                   }
                 });
 
