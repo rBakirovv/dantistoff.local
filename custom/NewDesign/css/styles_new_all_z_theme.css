@@ -2864,7 +2864,7 @@
   }
 
   .price-table-accordion__list-item:has(.serves-accordion-text__info) .price-table-accordion__item-price-container {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .price-table-accordion__list-item-title-container {
